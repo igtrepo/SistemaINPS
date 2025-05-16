@@ -9,7 +9,7 @@ class Dottore {
     private String telefono;
     private String email;
     private ArrayList<LocalTime> orariDisponibili;
-    // private ArrayList<Paziente> pazienti;
+    private ArrayList<Paziente> pazienti;
 
     // Aggiunge un paziente alla lista
     public boolean aggiungiPaziente(Paziente p) {
@@ -40,7 +40,7 @@ class Dottore {
     }
 
     public void stampaPazienti(){
-        for(Paziente p : Pazienti){
+        for(Paziente p : pazienti){
             System.out.println(p);
         }
     }
